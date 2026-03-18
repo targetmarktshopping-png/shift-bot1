@@ -15,7 +15,7 @@ app.use(session({
 }));
 
 // ── CONFIG ──────────────────────────────────────────────────────────────────
-const BOT_TOKEN   = "MTQ4MzgzNjk2ODMzMTY0MDk4NA.GAPilW.sIW1eJsNxpVVNxxZVOv6l4sbOu3z6_zNpbhnkc";
+const BOT_TOKEN   = process.env.BOT_TOKEN;
 const GUILD_ID    = "1482483178055667965";
 const MANAGER_ROLE = "1483836330877390899";
 const DATA_FILE   = path.join(__dirname, "data", "shifts.json");
